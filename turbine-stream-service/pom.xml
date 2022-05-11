@@ -42,6 +42,19 @@
 	</dependencies>
 
 	<build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.openrewrite.maven</groupId>
+                    <artifactId>rewrite-maven-plugin</artifactId>
+                    <configuration>
+                        <activeRecipes combine.children="append">
+                            <recipe>org.openrewrite.java.format.AutoFormat</recipe>
+                        </activeRecipes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
