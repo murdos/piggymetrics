@@ -16,6 +16,10 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
+	<properties>
+		<jqassistant.skip>true</jqassistant.skip>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
